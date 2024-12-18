@@ -1,19 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="English (US)v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_margin="30dp"
+        android:src="@drawable/baseline_grade_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/but1"
+            android:backgroundTint="#0000FF"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Forgot Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:backgroundTint="@drawable/bg"
+        android:text="Create new account"
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
